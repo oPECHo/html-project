@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <style>
+             body{
+    background-image: url(img/3.jpg);
+        background-size:1366px,786px;
+             }
+             div.transbox {
+                width:500px;
+                background-color: #ffffff;
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+                }
+            div.transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+                }
+                input[type=submit]{
+                width:15%;
+                background-color:#4CAF50;
+                color:white;
+                padding:14px 20px;
+                margin:8px 0; 
+                border:none;
+                border-radius:4px;
+                cursor:pointer;
+        }
+        input[type=submit]:hover{
+         background-color:#4CAF50;
+        }
+        input[type=reset]{
+                width:15%;
+                background-color:palevioletred;
+                color:white;
+                padding:14px 20px;
+                margin:8px 0; 
+                border:none;
+                border-radius:4px;
+                cursor:pointer;
+        }
+        input[type=reset]:hover{
+         background-color:palevioletred;
+        }
+            </style>
+    <form action="php_example1.php" method="POST">
+        <div class ="transbox">
+                <div class="form-header">
+                        <b><h1><div class="sing-up-title title ng-binding">.::LOG IN::.</div></h1></b>
+                        <div class="already-user ng-binding">
+                            
+                            Do you have an account ?
+                            
+                            <a class="login-link ng-binding" href ="from1.html">Register</a>
+                        </div>
+                    </div>
+       <h2> email   : <input type="text" name="email"><br>
+        password : <input type="password" name="password"><br></h2>
+        <input type="hidden" name="cmd" value="login" >
+        <input type="submit" value="ยืนยัน"><input type="reset" value="ยกเลิก"></div>
+    </div>
+    </form>
+    </center>
+</body>
+</html>
