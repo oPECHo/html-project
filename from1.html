@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example-from</title>
+</head>
+<body>
+    <center><br><br><br><br><br><br><br><br><br><br>
+    <style>
+         body{
+    background-image: url(img/5.jpg);
+        background-size:1366px,786px;
+         }
+         body {
+            color: black;
+            }
+        h1 {
+            color: black;
+            }
+         div.transbox {
+                width:500px;
+                background-color: #ffffff;
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+                }
+            div.transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+                }
+                input[type=submit]{
+                width:15%;
+                background-color:#4CAF50;
+                color:white;
+                padding:14px 20px;
+                margin:8px 0; 
+                border:none;
+                border-radius:4px;
+                cursor:pointer;
+        }
+        input[type=submit]{
+        width:25%;
+        background-color:#4CAF50;
+        color:white;
+        padding:14px 20px;
+        margin:8px 0; 
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+}
+input[type=submit]:hover{
+ background-color:#4CAF50;
+}
+input[type=reset]{
+        width:25%;
+        background-color:palevioletred;
+        color:white;
+        padding:14px 20px;
+        margin:8px 0; 
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+}
+input[type=reset]:hover{
+ background-color:palevioletred;
+}
+    </style>
+    <form action="php_example1.php" method="POST">
+            <div class="transbox">
+            <div class="form-header">
+            <b><h1><div class="sing-up-title title ng-binding">.::REGISTER::.</div></h1></b>
+            <div class="container">
+        เลขประจำตัว : <input type="text" name="member_id"> <br>
+        ชื่อ : <input type="text" name="f_name"> <br>
+        นามสกุล : <input type="text" name="l_name"> <br>
+        email : <input type="text" name="email"> <br>
+        password : <input type="password" name="password"> <br>
+        ที่อยู่ : <textarea name="address" cols="30" rows="10"></textarea> <br>
+        <input type="hidden" name="cmd" value="register">
+        <input type="submit" value="ยืนยัน">
+        <input type="reset" value="ยกเลิก">
+    </div> 
+    </div>
+    </form>
+</center>
+</body>
+</html>
